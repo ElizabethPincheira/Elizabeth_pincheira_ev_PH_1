@@ -5,7 +5,7 @@
   <div id="container">
 
     <div>
-      <h3>Elige una figura gemetrica</h3>
+      <h3>Figura Geométrica</h3>
     </div>
 
     <div>
@@ -14,7 +14,7 @@
 
       <ion-list>
         <ion-item>
-          <ion-select aria-label="Favorite Fruit" [(ngModel)]="figuraSeleccionada" (ionChange)="onFigura()">
+          <ion-select aria-label="Lista figuras" placeholder="Escoja una figura geométrica" [(ngModel)]="figuraSeleccionada" (ionChange)="onFigura()">
             <ion-select-option value="triangulo">Triangulo</ion-select-option>
             <ion-select-option value="circulo">Circulo</ion-select-option>
           </ion-select>

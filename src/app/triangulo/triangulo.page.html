@@ -1,13 +1,42 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>triangulo</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">triangulo</ion-title>
+      <ion-title size="large">Triángulo</ion-title>
     </ion-toolbar>
   </ion-header>
+
+<!-- card -->
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Perímetro</ion-card-subtitle>
+    <ion-card-title>Triángulo</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    El perímetro de un triángulo es la suma de las longitudes de sus tres lados. En otras palabras, es la medida total del contorno o borde del triangulo.
+  </ion-card-content>
+
+  <ion-img
+    src="/src/assets/img/perimetrocirculo.png"
+    alt="imagen perimetro"
+></ion-img>
+</ion-card>
+
+<!-- formulario -->
+  <ion-list>
+    <ion-item>
+      <ion-input label="Radio" labelPlacement="stacked" ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button>Calcular el perimetro</ion-button>
+
+  <!-- parrafo respuesta -->
+  <p>Respueta: el perimetro es bla bla bla</p>
+
+
+
+
 </ion-content>
+
