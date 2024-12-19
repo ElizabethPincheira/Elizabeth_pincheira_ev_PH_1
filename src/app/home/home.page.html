@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+
+    <div>
+      <h3>Elige una figura gemetrica</h3>
+    </div>
+
+    <div>
+
+
+
+      <ion-list>
+        <ion-item>
+          <ion-select aria-label="Favorite Fruit" [(ngModel)]="figuraSeleccionada" (ionChange)="onFigura()">
+            <ion-select-option value="triangulo">Triangulo</ion-select-option>
+            <ion-select-option value="circulo">Circulo</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+</ion-content>
