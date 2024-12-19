@@ -1,34 +1,26 @@
 <ion-header [translucent]="true">
 
-<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
 
-  <div id="container">
+    <div id="container">
 
-    <div>
-      <h3>Figura Geométrica</h3>
+      <div>
+        <h3>Figura Geométrica</h3>
+      </div>
+
+      <div>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="Lista figuras" placeholder="Escoja una figura geométrica"
+              [(ngModel)]="figuraSeleccionada" (ionChange)="onFigura()">
+              <ion-select-option value="triangulo">Triangulo</ion-select-option>
+              <ion-select-option value="circulo">Circulo</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+        <div *ngIf="figuraSeleccionada === 'triangulo'"><app-triangulo/></div>
+        <div *ngIf="figuraSeleccionada === 'circulo'"><app-circulo/></div>
+      </div>
     </div>
 
-    <div>
-
-
-
-      <ion-list>
-        <ion-item>
-          <ion-select aria-label="Lista figuras" placeholder="Escoja una figura geométrica" [(ngModel)]="figuraSeleccionada" (ionChange)="onFigura()">
-            <ion-select-option value="triangulo">Triangulo</ion-select-option>
-            <ion-select-option value="circulo">Circulo</ion-select-option>
-          </ion-select>
-        </ion-item>
-      </ion-list>
-
-
-
-
-
-
-
-
-    </div>
-  </div>
-
-</ion-content>
+  </ion-content>
