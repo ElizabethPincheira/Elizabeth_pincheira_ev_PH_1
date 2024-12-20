@@ -16,7 +16,8 @@
   <!-- formulario -->
   <ion-list>
     <ion-item>
-      <ion-input label="Radio" labelPlacement="stacked"></ion-input>
+      <!-- aquí vinculamos el numero ingresado al atributo (radio) de la clase -->
+      <ion-input label="Radio" labelPlacement="stacked" type="number" [(ngModel)]="radio"></ion-input> 
     </ion-item>
   </ion-list>
   <ion-button (click)="calcularPerimetro()">Calcular el perimetro</ion-button>
