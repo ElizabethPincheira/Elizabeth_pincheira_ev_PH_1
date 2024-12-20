@@ -1,5 +1,5 @@
 // clase abstracta, es una plantilla para las otras clases
-abstract class FiguraGeometrica {
+export abstract class FiguraGeometrica {
     // atributos-------
     nombre
     // constructor--------

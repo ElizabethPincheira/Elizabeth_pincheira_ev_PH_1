@@ -1,3 +1,5 @@
+import {FiguraGeometrica } from'../clases/FiguraGeometrica';
+
 // clase hija de FiguraGeometrica
 class TrianguloEscaleno extends FiguraGeometrica{
     // atributos

@@ -20,11 +20,7 @@ export class HomePage {
   constructor(private router: Router){}
 
 
-
   onFigura(){
     console.log(this.figuraSeleccionada)
-
-   
-
   }
 }

@@ -19,4 +19,7 @@ export class CirculoPage implements OnInit {
   ngOnInit() {
   }
 
+
+
+
 }

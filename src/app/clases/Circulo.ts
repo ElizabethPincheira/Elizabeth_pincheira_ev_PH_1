@@ -1,3 +1,5 @@
+
+import {FiguraGeometrica } from'../clases/FiguraGeometrica';
 // clase Circulo, hereda de clase abstracta FigurasGeometricas
 class Circulo extends FiguraGeometrica {
 // atributos de la clase
