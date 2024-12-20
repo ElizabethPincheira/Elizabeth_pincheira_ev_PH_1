@@ -1,17 +1,16 @@
-class FiguraGeometrica {
-    nombre : string;
+// clase abstracta, es una plantilla para las otras clases
+abstract class FiguraGeometrica {
+    // atributos-------
+    nombre
+    // constructor--------
     constructor ( nombre : string ){
         this.nombre = nombre;
     }
-        
-    calcularPerimetro():void{
-        console.log("retorno del metodo calcular perimetro la clase padre deberia decir circulo==",miFigura); 
-    }
+    // metodo abstracto------
+    abstract calcularPerimetro(): number;
 
 }
 
 
-const miFigura = new FiguraGeometrica("circulo");
-console.log("retorno de del metodo desde instancia circulo//",miFigura.calcularPerimetro())
 
 
